@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/ivCardImage"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/svNombreDeCarta"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/svNombreDeCarta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:queryHint="Búscar una carta"
+        app:layout_constraintBottom_toTopOf="@id/etCorreo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivCardImage"/>
+    
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Correo electronico"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/etContraseña"
+        app:layout_constraintTop_toBottomOf="@id/svNombreDeCarta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/etContraseña"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarse"
+        app:layout_constraintTop_toBottomOf="@id/etCorreo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="registrarse"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etContraseña"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnIniciarSesion"/>
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="entrar"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etContraseña"
+        app:layout_constraintStart_toEndOf="@+id/btnRegistrarse"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

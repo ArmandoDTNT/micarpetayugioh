@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "309985272118",
+    "project_id": "trading-card-game-40f47",
+    "storage_bucket": "trading-card-game-40f47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309985272118:android:61b2fcc2481983aca25397",
+        "android_client_info": {
+          "package_name": "com.example.micarpetadeyugioh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309985272118-1r5ago6ceeh65u4k7ar0o9m9jm8keegl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-ZQAqrd9xyT37KI29RomKqZCHDLOQxGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309985272118-1r5ago6ceeh65u4k7ar0o9m9jm8keegl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
